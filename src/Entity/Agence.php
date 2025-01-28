@@ -13,7 +13,7 @@ class Agence
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 15)]
+    #[ORM\Column(length: 15, unique:true)]
     private ?string $numero = null;
 
     #[ORM\Column(length: 255)]
